@@ -1,0 +1,19 @@
+#Create a Python program to convert temperatures between Celsius and Fahrenheit.
+Temperature_value=float(input("what is the Temperature value ?"))
+unit=input("in what unit is the value ? C or F:").upper()
+
+#conversion formular
+def celsius_to_fahrenheit(C):
+    return (C *9/5 + 32)
+def fahrenheight_to_celsius(F):
+    return (F-32 * 5/9)
+
+#conversion operation and output
+if unit.upper()=='C':
+    converted_value=celsius_to_fahrenheit(Temperature_value)
+    print(f"your converted Temperature is,{converted_value} K")
+elif unit.upper()=='F':
+    converted_value=fahrenheight_to_celsius(Temperature_value)
+    print(f"your converted tempereture is, {converted_value} C")
+else:
+    print("specify a  valid unit")

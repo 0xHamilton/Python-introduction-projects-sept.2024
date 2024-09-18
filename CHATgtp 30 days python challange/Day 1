@@ -1,0 +1,14 @@
+#Write a program that asks the user for two numbers and performs basic math operations (addition, subtraction, multiplication, division).
+x=int(input("what is the first number ?"))
+y=int(input("what is the second number ?"))
+#perfoming basic operation
+add=x+y
+sub=x-y
+multiply=x*y
+divide=x/y
+
+#display the result with descriptive message
+print(f"the sum of both numbers is:{add}")
+print(f"the subtrction of both number is :{sub}")
+print(f"the product of  both number is:{multiply}")
+print(f"the division of both number is:{divide}")
