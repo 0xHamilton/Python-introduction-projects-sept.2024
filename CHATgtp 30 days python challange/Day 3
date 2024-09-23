@@ -1,0 +1,5 @@
+#Write a program that asks the user for the radius of a circle and calculates its area using the formula
+R=float(input("what is the raduis of the circle?"))
+
+Area_of_circle=3.14*R*R
+print(f"The area of the circle is, {Area_of_circle}")

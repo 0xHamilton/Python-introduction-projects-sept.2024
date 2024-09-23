@@ -1,0 +1,11 @@
+class puppy():
+    def __init__(self,name,favourite_toy):
+        self.name=name
+        self.favourite_toy=favourite_toy
+
+
+    def play(self):
+        print( self.name + "is playing with the" + self.favourite_toy)
+
+Happy=puppy("happy","teddy")
+Happy.play()

@@ -1,0 +1,13 @@
+#Create a program that allows the user to input items for a shopping list one by one, and then prints the full list when they’re done.
+
+shopping_list=[]
+print("input shopping list and state done when you have finised:")
+while True:
+    item=input("add an item:").strip()
+    if item.lower()== "done":
+        break
+    shopping_list.append(item)
+
+print("\nHere is your list:")
+for i,item in enumerate(shopping_list,start=1):
+    print(f"{i}.{item}")
