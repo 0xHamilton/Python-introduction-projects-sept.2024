@@ -1,0 +1,6 @@
+#Write a program that calculates the tip for a restaurant bill. Ask for the total bill amount and the percentage of the tip (e.g., 10%, 15%).
+Total_amount=float(input("what is the total amount of the bill ?"))
+percentage=float(input("input the percentage?"))
+
+Tip= (percentage/100) * Total_amount
+print(f"Your share of the money according to {percentage}%, is #{Tip}")

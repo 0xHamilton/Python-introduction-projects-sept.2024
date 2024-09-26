@@ -1,3 +1,0 @@
-x=2.8
-round(x)
-print(round(x))

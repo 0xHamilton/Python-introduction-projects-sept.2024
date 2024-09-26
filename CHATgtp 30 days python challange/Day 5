@@ -1,1 +1,13 @@
  #Write a simple guessing game where the computer picks a random number between 1 and 10, and the user has three tries to guess it.
+guess_number=5
+number_count=0
+guess_limit=3
+while number_count<guess_limit:
+    guess=int(input("guess a number between 1-10?:"))
+    number_count+=1
+    
+if guess==guess_number:
+    print("you won")
+    breakpoint
+else:
+   print("try again")

@@ -1,0 +1,13 @@
+#Create a program that asks for your birth year and current year, then calculates how many days you have lived (assuming 365 days per year).
+
+print("hello,welcome to Age calculator")
+Name=(input("what is your name ?"))
+print(f"Hi, {Name}")
+
+Born_year=int(input("in what year where you born?"))
+current_year=int(input("in what year are you currently in?"))
+
+Age=current_year-Born_year
+days_lived=Age*365
+print(f"you are {Age} years old, which means you have lived a total of {days_lived} day")
+print("cheers to many more years")
