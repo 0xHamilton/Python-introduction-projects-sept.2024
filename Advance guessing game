@@ -1,0 +1,32 @@
+#create an Advance guessing game better than your last one.
+
+import random
+
+lowest_num=1
+highest_num=100
+Answer=random.randint(lowest_num,highest_num)
+guesses=0
+is_runing=True
+
+print("welcome to python number guessing game")
+print(f"select a number between {lowest_num} and {highest_num}")
+
+while is_runing:
+    guess=(input("enter your guess: "))
+    if guess.isdigit():
+        guess=int(guess)
+        guesses +=1
+        if guess < lowest_num or guess > highest_num:
+            print("Number is out of range")
+            print(f"select a number between {lowest_num} and {highest_num}")
+        elif guess < Answer:
+            print("your guess is too low")
+        elif guess > Answer:
+            print("your guess is too high")
+        else:
+            print(f"CORRECT ! The Answer was {Answer}")
+            print(f"Number of guesses is {guesses}")
+            is_runing=False
+    else:
+        print("invalid guess")
+        print(f"please select a number that is between {lowest_num} and {highest_num}")
